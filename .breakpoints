@@ -1,0 +1,28 @@
+{
+  "files": {
+    ".breakpoints": [
+      {
+        "id": "07f94fa2-243d-49a2-a17f-567676563cd9",
+        "line": 20,
+        "version": 2,
+        "index": 335
+      }
+    ],
+    "book2.py": [
+      {
+        "id": "a979b028-af5c-4410-89e6-e3d19ed098fe",
+        "line": 1,
+        "version": 0,
+        "index": 0
+      }
+    ],
+    "그리디/1이 될 때까지/book2.py": [
+      {
+        "id": "fe5edb68-0603-47f4-b213-5d31515d22ad",
+        "line": 1,
+        "version": 0,
+        "index": 0
+      }
+    ]
+  }
+}

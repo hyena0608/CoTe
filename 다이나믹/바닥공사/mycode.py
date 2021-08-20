@@ -1,3 +1,6 @@
+# 동적계획법이 되긴한다...?
+# 모범 코드는 x -> 너무 수학적 접근..??
+
 import sys
 
 n = int(sys.stdin.readline().rstrip())

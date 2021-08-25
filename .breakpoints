@@ -3,9 +3,9 @@
     ".breakpoints": [
       {
         "id": "07f94fa2-243d-49a2-a17f-567676563cd9",
-        "line": 21,
+        "line": 6,
         "version": 1,
-        "index": 365
+        "index": 107
       }
     ],
     "book2.py": [
@@ -18,9 +18,9 @@
     ],
     "main.py": [
       {
-        "id": "512fab56-a923-4c3f-a497-34e569113af2",
+        "id": "638a8527-6610-4de2-a34f-dbb7db6b9d6a",
         "line": 1,
-        "version": 1,
+        "version": 29865,
         "index": 0
       }
     ],
@@ -44,7 +44,7 @@
       {
         "id": "fcd042d6-af92-4a2d-8338-10b972246ce0",
         "line": 27,
-        "version": 1,
+        "version": 40,
         "index": 615
       }
     ],

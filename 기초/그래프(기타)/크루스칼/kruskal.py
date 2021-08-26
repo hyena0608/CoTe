@@ -30,7 +30,6 @@ for _ in range(e):
   a, b, cost = map(int, input().split())
   # 비용순으로 정렬하기 위해서 튜플의 첫 번째 원소를 비용으로 설정
   edges.append((cost, a ,b))
-  print(type(edges))
 
 # 간선 비용순 정렬
 edges.sort()

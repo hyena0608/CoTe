@@ -1,40 +1,32 @@
-food_times = list(map(int, input().split()))
-k = int(input())
-loc = 0
-count = 0
+from collections import deque
 
-while count != k:
+n, m = map(int, input().split())
 
-    if food_times[loc] == 0:
-        if loc == len(food_times):
-            for i in range(len(food_times)):
-                if food_times[i] != 0:
-                    loc = i
-                    continue
-        for j in range(loc, len(food_times)):
-            if food_times[j] != 0:
-                food_times[j] -= 1
-                loc = j + 1
-                count += 1
-                continue
-    else:
-        food_times[loc] -= 1
-        count += 1
-        if loc + 1 == len(food_times):
-            loc = 0
-        else:
-            loc += 1
+graph = [[] for _ in range(n + 1)]
+indegree = [0] * (n + 1)
 
-    if sum(food_times) == 0:
-        print(-1)
-        break
+for _ in range(m):
+  a, b = map(int, input().split())
+  graph[a].append(b)
+  indegree[b] += 1
 
-if sum(food_times) != 0:
-    if loc == len(food_times):
-        loc = 0
-    while food_times[loc] != 0:
-        if food_times[loc] != 0:
-            break
-        else:
-            loc += 1
-    print(loc + 1)
+def topology_sort():
+  result = []
+  q = deque()
+  
+  for i in range(1, n + 1):
+    if indegree[i] == 0:
+      q.append(i)
+  
+  while q:
+    now = q.popleft()
+    result.append(now)
+    for i in graph[now]:
+      indegree[i] -= 1
+      if indegree[i] == 0:
+        q.append(i)
+
+  for i in result:
+    print(i, end = ' ')
+
+topology_sort()
